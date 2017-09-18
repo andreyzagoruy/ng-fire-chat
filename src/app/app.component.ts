@@ -8,9 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'FireChat';
 
+  newContactName = '';
+
   contacts = [
     'Ronald',
     'Bobby',
     'Johny'
   ];
+
+  addContact() {
+    this.contacts.push(this.newContactName);
+    this.newContactName = '';
+  }
 }

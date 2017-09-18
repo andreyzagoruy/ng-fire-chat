@@ -10,6 +10,8 @@ export class AppComponent {
 
   newContactName = '';
 
+  selectedContact = '';
+
   contacts = [
     'Ronald',
     'Bobby',
@@ -19,5 +21,9 @@ export class AppComponent {
   addContact() {
     this.contacts.push(this.newContactName);
     this.newContactName = '';
+  }
+
+  selectContact(contact) {
+    this.selectedContact = contact;
   }
 }

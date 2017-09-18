@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FireChat';
+
+  contacts = [
+    'Ronald',
+    'Bobby',
+    'Johny'
+  ];
 }

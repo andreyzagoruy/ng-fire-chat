@@ -10,16 +10,16 @@ export class AppComponent {
 
   newContactName = '';
 
-  selectedContact = '';
+  selectedContact: { name: string };
 
   contacts = [
-    'Ronald',
-    'Bobby',
-    'Johny'
+    { name: 'Ronald' },
+    { name: 'Bobby' },
+    { name: 'Johny' }
   ];
 
   addContact() {
-    this.contacts.push(this.newContactName);
+    this.contacts.push({ name: this.newContactName});
     this.newContactName = '';
   }
 
@@ -27,7 +27,7 @@ export class AppComponent {
     this.selectedContact = contact;
   }
 
-  isSelected(contact: string): boolean {
+  isSelected(contact): boolean {
     return this.selectedContact == contact;
   }
 }

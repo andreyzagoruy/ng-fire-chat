@@ -1,12 +1,21 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  box-shadow: 0 0 2px 1px #777;
+  background-color: #05a3ff;
+}
+
+main {
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
 h1 {
-  color: blueviolet;
+  line-height: 60px;
+  font-size: 24px;
   text-align: center;
-}
-
-li {
-  cursor: pointer;
-}
-
-li.selected {
-  color: red;
+  color: #ffffff;
 }

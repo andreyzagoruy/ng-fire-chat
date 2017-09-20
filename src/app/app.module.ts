@@ -4,11 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ContactDetailsComponent } from './contact/contact-details/contact-details.component';
+import { ContactListComponent } from './contact/contact-list/contact-list.component';
+import { ContactAddComponent } from './contact/contact-add/contact-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactDetailsComponent
+    ContactDetailsComponent,
+    ContactListComponent,
+    ContactAddComponent
   ],
   imports: [
     BrowserModule,

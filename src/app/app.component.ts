@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'FireChat';
 
-  newContactName = '';
-
   selectedContact: { name: string };
 
   contacts = [
@@ -18,16 +16,8 @@ export class AppComponent {
     { name: 'Johny' }
   ];
 
-  addContact() {
-    this.contacts.push({ name: this.newContactName});
-    this.newContactName = '';
-  }
-
   selectContact(contact) {
     this.selectedContact = contact;
   }
 
-  isSelected(contact): boolean {
-    return this.selectedContact == contact;
-  }
 }

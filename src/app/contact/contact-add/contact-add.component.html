@@ -1,0 +1,8 @@
+<h2>New contact</h2>
+<form (submit)="addContact()" >
+  <input 
+    type="text" 
+    name="name"
+    [(ngModel)]="newContactName">
+  <button type="submit">Add contact</button>
+</form>

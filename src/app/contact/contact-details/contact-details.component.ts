@@ -10,13 +10,12 @@ export class ContactDetailsComponent {
   contacts: FirebaseListObservable<any[]>;
 
   constructor(private db: AngularFireDatabase) {
-      this.contacts = this.db.list('/contacts');
   }
 
   @Input() contact;
 
   updateContact() {
-    this.contacts.update(this.contact.$key, this.contact);
+    this.db.object(`/contacts/${this.contact.$key}`).update(this.contact);
   }
 
 }

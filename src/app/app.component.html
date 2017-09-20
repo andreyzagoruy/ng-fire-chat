@@ -4,23 +4,20 @@
   </h1>
 </header>
 
+<aside>
+  <contact-list
+    [contacts]="contacts"
+    (select)="selectContact($event)">
+  </contact-list>
+
+  <contact-add
+    [contacts]="contacts">
+  </contact-add>
+</aside>
+
 <main>
-  <aside>
-    <contact-list
-      [contacts]="contacts"
-      (select)="selectContact($event)">
-    </contact-list>
-
-    <contact-add
-      [contacts]="contacts">
-    </contact-add>
-  </aside>
-
   <contact-details
     *ngIf="selectedContact"
     [contact]="selectedContact">
-
   </contact-details>
-
-  
 </main>

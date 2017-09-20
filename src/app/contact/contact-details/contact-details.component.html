@@ -1,4 +1,10 @@
-<h2>{{contact.name}}</h2>
+<div>
+  <h2>{{contact.name}}</h2>
+  <input
+    id="favourite"
+    type="checkbox"
+    [(ngModel)]="contact.favourite">
+</div>
 <input
   type="text"
   [(ngModel)]="contact.name">

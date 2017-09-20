@@ -5,13 +5,22 @@
 </header>
 
 <aside>
+  <h2>Favourites <span>({{getFavouritesLenght().length}})</span></h2>
   <contact-list
-    [contacts]="contacts"
+    [contacts]="getFavouritesLenght(contacts)"
+    [selected]="selectedContact"
+    (select)="selectContact($event)">
+  </contact-list>
+
+  <h2>Contacts <span>({{getContactsLenght().length}})</span></h2>
+  <contact-list
+    [contacts]="getContactsLenght(contacts)"
+    [selected]="selectedContact"
     (select)="selectContact($event)">
   </contact-list>
 
   <contact-add
-    [contacts]="contacts">
+    [contacts]="contactList">
   </contact-add>
 </aside>
 

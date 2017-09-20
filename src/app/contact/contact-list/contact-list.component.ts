@@ -8,9 +8,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ContactListComponent {
 
   @Input() contacts;
+  @Input('selected') selectedContact: any;
   @Output() select = new EventEmitter();
-
-  selectedContact: { name: string };
 
   selectContact(contact) {
     this.selectedContact = contact;

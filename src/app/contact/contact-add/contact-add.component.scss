@@ -3,7 +3,7 @@ form {
 }
 
   input {
-    height: 24px;
+    height: 30px;
     padding: 0 4px;
     font-size: 14px;
     width: 126px;
@@ -13,11 +13,12 @@ form {
     display: inline-block;
     background-color: #05a3ff;
     color: #ffffff;
-    height: 24px;
+    height: 30px;
     font-size: 14px;
-    line-height: 24px;
-    padding: 0 10px;
-    margin-left: 4px;
+    line-height: 30px;
+    padding: 0 18px;
+    margin-left: 6px;
     border: none;
     cursor: pointer;
+    text-transform: uppercase;
   }
